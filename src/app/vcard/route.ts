@@ -2,19 +2,13 @@ import { NextResponse } from "next/server";
 import VCard from "vcard-creator";
 
 import { USER } from "@/data/user";
-import { decodeEmail, decodePhoneNumber } from "@/utils/string";
 
 export const dynamic = "force-static";
 
 export async function GET() {
   const card = new VCard();
 
-  card
-    .addName(USER.lastName, USER.firstName)
-    .addPhoneNumber(decodePhoneNumber(USER.phoneNumber))
-    .addAddress(USER.address)
-    .addEmail(decodeEmail(USER.email))
-    .addURL(USER.website);
+  card.addName(USER.lastName, USER.firstName).addURL(USER.website);
 
   const photo = await getVCardPhoto(USER.avatar);
   if (photo) {
