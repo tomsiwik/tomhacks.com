@@ -1,24 +1,22 @@
 {
-  "name": "chanhdai.com",
-  "version": "0.1.0",
-  "description": "chanhdai.com is my portfolio website, showcasing my work and experience as a Software Developer & UI/UX Designer.",
-  "homepage": "https://chanhdai.com",
+  "name": "tomhacks.com",
+  "version": "0.0.1",
+  "description": "A weird website about a weird guy",
+  "homepage": "https://tomhacks.com",
   "license": "MIT",
   "author": {
-    "name": "Nguyen Chanh Dai",
-    "email": "dai@chanhdai.com",
-    "url": "https://github.com/ncdai"
+    "name": "Tomas Sivicki",
+    "url": "https://github.com/tomsiwik"
   },
   "contributors": [
     {
-      "name": "Nguyen Chanh Dai",
-      "email": "dai@chanhdai.com",
-      "url": "https://github.com/ncdai"
+      "name": "Tomas Sivicki",
+      "url": "https://github.com/tomsiwik"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ncdai/chanhdai.com.git"
+    "url": "git+https://github.com/tomsiwik/tomhacks.com.git"
   },
   "scripts": {
     "dev": "next dev -p 1408 --turbopack",

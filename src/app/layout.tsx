@@ -47,11 +47,11 @@ export const metadata: Metadata = {
   keywords: SITE_INFO.keywords,
   authors: [
     {
-      name: "ncdai",
+      name: "tomsiwik",
       url: SITE_INFO.url,
     },
   ],
-  creator: "ncdai",
+  creator: "tomsiwik",
   openGraph: {
     siteName: SITE_INFO.name,
     url: "/",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@iamncdai", // Twitter username
+    creator: "@tomsiwik", // Twitter username
     images: [SITE_INFO.ogImage],
   },
   icons: {
