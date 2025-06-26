@@ -4,8 +4,13 @@ export const USER = {
   displayName: "Tom Siwik",
   username: "tomsiwik",
   gender: "male",
-  bio: "Indiehacker, Developer, Designer (I'm a one-man team)",
-  flipSentences: ["Software Developer"],
+  bio: "Indiehacker",
+  flipSentences: [
+    "Software Developer",
+    "Designer (not really)",
+    "Yapper",
+    "Basketball Pro",
+  ],
   website: "https://tomhacks.com",
   otherWebsites: [],
   jobTitle: "Software Developer",
@@ -19,7 +24,7 @@ export const USER = {
   about: `
 Hi, I'm Tom. I'm a software developer. Full stack!
   `,
-  avatar: "https://assets.tomhacks.com/images/chanhdai-avatar-ghibli.jpeg",
+  avatar: "https://assets.tomhacks.com/media/avatar.mp4",
   ogImage: "https://assets.tomhacks.com/images/screenshot-og-image-dark.png",
   keywords: "tom, indiehacker",
   dateCreated: "2025-06-25", // YYYY-MM-DD

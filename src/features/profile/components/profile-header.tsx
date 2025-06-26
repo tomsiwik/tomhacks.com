@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { SimpleTooltip } from "@/components/ui/tooltip";
 import { USER } from "@/data/user";
 import { cn } from "@/lib/utils";
@@ -12,16 +10,16 @@ export function ProfileHeader() {
     <div className="screen-line-after flex border-x border-edge">
       <div className="shrink-0 border-r border-edge">
         <div className="mx-[2px] my-[3px]">
-          <Image
-            className="size-32 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background select-none sm:size-40"
-            alt={`${USER.displayName}'s avatar`}
-            src={USER.avatar}
-            width={512}
-            height={512}
-            quality={100}
-            priority
-            unoptimized
-          />
+          <video
+            className="avatar size-32 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background select-none sm:size-40"
+            width="512"
+            height="512"
+            autoPlay
+            muted
+          >
+            <source src={USER.avatar} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         {/* Flag of Viet Nam */}
         {/* <svg

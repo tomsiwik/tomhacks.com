@@ -4,14 +4,14 @@ import { motion, useMotionValueEvent, useScroll } from "motion/react";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
-import { ChanhDaiMark } from "./chanhdai-mark";
+import { Logo } from "./logo";
 
-export function SiteHeaderMark() {
+export function HeaderLogo() {
   const pathname = usePathname();
-  return pathname === "/" ? <ChanhDaiMarkMotion /> : <ChanhDaiMark />;
+  return pathname === "/" ? <LogoMotion /> : <Logo />;
 }
 
-function ChanhDaiMarkMotion() {
+function LogoMotion() {
   const { scrollY } = useScroll();
   const [visible, setVisible] = useState(false);
   const distanceRef = useRef(160);
@@ -39,7 +39,7 @@ function ChanhDaiMarkMotion() {
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 512 256"
+      viewBox="0 0 381 180"
       initial={{
         opacity: 0,
         transform: "translateY(8px)",
@@ -50,10 +50,9 @@ function ChanhDaiMarkMotion() {
       }}
       transition={{ duration: 0.3 }}
     >
-      <path
-        d="M192 256H64v-64h128v64ZM448 64H320v128h128v64H256V0h192v64ZM64 192H0V64h64v128ZM512 192h-64V64h64v128ZM192 64H64V0h128v64Z"
-        fill="currentColor"
-      />
+      <g transform="matrix(1,0,0,1,-46.5001,-101.116)" fill="currentColor">
+        <path d="M166.082,278.457L166.082,101.116L271.418,101.116L271.418,278.457L166.082,278.457ZM236.306,136.584L201.194,136.584L201.194,242.989L236.306,242.989L236.306,136.584ZM151.836,101.116L151.836,136.584L116.724,136.584L116.724,278.457L81.612,278.457L81.612,136.584L46.5,136.584L46.5,101.116L151.836,101.116ZM285.461,278.457L285.461,137.529L303.373,137.529L303.373,102.06L425.909,102.06L425.909,279.402L390.797,279.402L390.797,137.529L373.241,137.529L373.241,278.457L338.129,278.457L338.129,137.529L320.573,137.529L320.573,278.457L285.461,278.457Z" />
+      </g>
     </motion.svg>
   );
 }

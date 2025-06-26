@@ -3,17 +3,12 @@ import type { ProfilePage as PageSchema, WithContext } from "schema-dts";
 
 import { USER } from "@/data/user";
 import { About } from "@/features/profile/components/about";
-import { Awards } from "@/features/profile/components/awards";
 import { Blog } from "@/features/profile/components/blog";
-import { Brand } from "@/features/profile/components/brand";
-import { Certifications } from "@/features/profile/components/certifications";
-import { Experiences } from "@/features/profile/components/experiences";
 import { Overview } from "@/features/profile/components/overview";
 import { ProfileCover } from "@/features/profile/components/profile-cover";
 import { ProfileHeader } from "@/features/profile/components/profile-header";
 import { Projects } from "@/features/profile/components/projects";
 import { SocialLinks } from "@/features/profile/components/social-links";
-import { TeckStack } from "@/features/profile/components/teck-stack";
 import { cn } from "@/lib/utils";
 
 export default function Page() {
@@ -26,7 +21,7 @@ export default function Page() {
         }}
       />
 
-      <div className="mx-auto md:max-w-3xl">
+      <div className="mx-auto md:max-w-4xl">
         <ProfileCover />
         <ProfileHeader />
         <Separator />
@@ -40,26 +35,26 @@ export default function Page() {
         <About />
         <Separator />
 
-        <TeckStack />
+        {/* <TeckStack />
+        <Separator /> */}
+
+        <Projects />
         <Separator />
 
         <Blog />
         <Separator />
 
-        <Experiences />
-        <Separator />
+        {/* <Experiences />
+        <Separator /> */}
 
-        <Projects />
-        <Separator />
+        {/* <Awards />
+        <Separator /> */}
 
-        <Awards />
-        <Separator />
-
-        <Certifications />
+        {/* <Certifications />
         <Separator />
 
         <Brand />
-        <Separator />
+        <Separator /> */}
       </div>
     </>
   );

@@ -32,7 +32,7 @@ export function QuickActions() {
         }}
       >
         <div className="screen-line-before before:z-1">
-          <div className="mx-auto px-2 md:max-w-3xl">
+          <div className="mx-auto px-2 md:max-w-4xl">
             <div className="border-x border-edge pt-2">
               <div className="screen-line-before screen-line-after -mx-px grid grid-cols-[1fr_1fr_2.5rem] gap-2 sm:grid-cols-2 sm:gap-4">
                 <Button size="lg" asChild>

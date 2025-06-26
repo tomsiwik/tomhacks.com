@@ -10,7 +10,7 @@ import { getAllPosts } from "@/data/blog";
 import { cn } from "@/lib/utils";
 
 import { BrandContextMenu } from "./brand-context-menu";
-import { SiteHeaderMark } from "./site-header-mark";
+import { HeaderLogo } from "./site-header-mark";
 import { SiteHeaderWrapper } from "./site-header-wrapper";
 
 export function SiteHeader() {
@@ -29,12 +29,12 @@ export function SiteHeader() {
         )}
       >
         <div
-          className="screen-line-before screen-line-after mx-auto flex h-12 items-center justify-between gap-2 border-x border-edge px-2 after:z-1 after:transition-[background-color] sm:gap-4 md:max-w-3xl"
+          className="screen-line-before screen-line-after mx-auto flex h-12 items-center justify-between gap-2 border-x border-edge px-2 after:z-1 after:transition-[background-color] sm:gap-4 md:max-w-4xl"
           data-header-container
         >
           <BrandContextMenu>
             <Link href="/" aria-label="Home" className="[&_svg]:h-8">
-              <SiteHeaderMark />
+              <HeaderLogo />
             </Link>
           </BrandContextMenu>
 
