@@ -16,6 +16,7 @@ export function ProfileHeader() {
             height="512"
             autoPlay
             muted
+            playsInline
           >
             <source src={USER.avatar} type="video/mp4" />
             Your browser does not support the video tag.

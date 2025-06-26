@@ -18,7 +18,6 @@ export function SocialLinkItem({ icon, title, description, href }: SocialLink) {
     >
       <div className="relative size-12 shrink-0">
         <Image
-          className="rounded-xl"
           src={icon}
           alt={title}
           width={48}
@@ -26,7 +25,7 @@ export function SocialLinkItem({ icon, title, description, href }: SocialLink) {
           quality={100}
           unoptimized
         />
-        <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-black/8 ring-inset dark:ring-white/8" />
+        <div className="pointer-events-none absolute inset-0" />
       </div>
 
       <div className="flex-1">
