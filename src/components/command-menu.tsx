@@ -301,7 +301,7 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
             </CommandItem>
 
             <CommandItem asChild>
-              <a href="https://assets.chanhdai.com/chanhdai-brand.zip" download>
+              <a href="https://assets.tomhacks.com/chanhdai-brand.zip" download>
                 <DownloadIcon />
                 Download Brand Assets
               </a>

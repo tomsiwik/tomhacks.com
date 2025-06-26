@@ -9,21 +9,13 @@
   },
   "editor.colorDecorators": false,
   "tailwindCSS.experimental.classRegex": [
-    [
-      "cva\\(((?:[^()]|\\([^()]*\\))*)\\)",
-      "[\"'`]?([^\"'`]+)[\"'`]?"
-    ],
-    [
-      "cn\\(((?:[^()]|\\([^()]*\\))*)\\)",
-      "(?:'|\"|`)([^']*)(?:'|\"|`)"
-    ]
+    ["cva\\(((?:[^()]|\\([^()]*\\))*)\\)", "[\"'`]?([^\"'`]+)[\"'`]?"],
+    ["cn\\(((?:[^()]|\\([^()]*\\))*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
-  "tailwindCSS.classFunctions": [
-    "cva",
-    "cn"
-  ],
+  "tailwindCSS.classFunctions": ["cva", "cn"],
   "files.associations": {
-    "*.css": "tailwindcss"
+    "*.css": "tailwindcss",
+    "wrangler.json": "jsonc"
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -34,5 +26,5 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

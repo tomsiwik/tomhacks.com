@@ -19,8 +19,8 @@ export const USER = {
   about: `
 Hi, I'm Tom. I'm a software developer. Full stack!
   `,
-  avatar: "https://assets.chanhdai.com/images/chanhdai-avatar-ghibli.jpeg",
-  ogImage: "https://assets.chanhdai.com/images/screenshot-og-image-dark.png",
+  avatar: "https://assets.tomhacks.com/images/chanhdai-avatar-ghibli.jpeg",
+  ogImage: "https://assets.tomhacks.com/images/screenshot-og-image-dark.png",
   keywords: "tom, indiehacker",
   dateCreated: "2025-06-25", // YYYY-MM-DD
 };

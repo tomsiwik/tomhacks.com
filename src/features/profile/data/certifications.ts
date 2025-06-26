@@ -5,7 +5,7 @@ export const CERTIFICATIONS: Certification[] = [
   //   title: "Certificate of Trademark Registration No. 543682",
   //   issuer: "Intellectual Property Office of Viet Nam",
   //   issuerLogoURL:
-  //     "https://assets.chanhdai.com/images/companies/ipvietnam.webp",
+  //     "https://assets.tomhacks.com/images/companies/ipvietnam.webp",
   //   issueDate: "2025-05-08",
   //   credentialID: "543682",
   //   credentialURL:

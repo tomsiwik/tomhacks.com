@@ -38,6 +38,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "wrangler": "^4.22.0",
     "@bprogress/next": "^3.2.12",
     "@hookform/resolvers": "^4.1.0",
     "@ncdai/react-wheel-picker": "^1.0.13",
